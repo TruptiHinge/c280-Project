@@ -1,0 +1,52 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/OsbWood.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.3688119226288874 -0.32361988570667816 0.8713483432600192 4.4471327627152535
+  position 0.2934422423990639 2.2723445434911627 2.3037124400398157
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+Robot {
+  children [
+    Pose {
+      translation -0.27 0 0.26
+      rotation 0.6785980574759006 0.6785980574759006 0.28108602380742503 2.59357
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.333333 1 0.498039
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.1 0.1 0.1
+          }
+        }
+      ]
+    }
+  ]
+}
+DEF Robot_Ramp Solid {
+  translation -0.3 0 0.2
+  rotation 0.25881802658060876 1.7500101797260283e-07 0.9659260992006009 3.14159
+  children [
+    Shape {
+      appearance OsbWood {
+      }
+      geometry Box {
+        size 0.7 0.2 0.05
+      }
+    }
+  ]
+}
